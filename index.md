@@ -18,7 +18,7 @@ Blogging in GitHub pages is a way to learn and code at the same time.
 ![GOAT](https://e0.pxfuel.com/wallpapers/736/844/desktop-wallpaper-best-soccer-players-cool-football-player.jpg)
 ![Nike](https://www.pixelstalk.net/wp-content/uploads/images6/Cool-Nike-Wallpaper-Blue-Color.jpg)
 ## About Me Freeform Picture
-![Freeform]()
+![Freeform](![Alt text](IMG_2439-2.jpg))
 
 ## Overview of Hacks, Study, and Tangibles 
 s
