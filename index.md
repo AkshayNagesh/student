@@ -4,7 +4,7 @@ title: Student Blog
 ---
 
 
-## Akshay Nagesh
+## Akshay Nagesh page
 This is about your journey. Start now!!!
 
 ## Overview of Hacks, Study and Tangibles
