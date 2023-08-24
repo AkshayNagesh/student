@@ -3,7 +3,7 @@ layout: blogs
 permalink: /blogs
 title: Blogs
 ---
-## Terms I learned 
+## Terms I learned
 - README.md: This file contains instructions and background information about the project. It is a standard file present in all properly set up GitHub projects.
 - index.md: This is the source file for the home page of the project. It is a standard file for all GitHub Pages projects. Note that Markdown (.md) files are converted to HTML by the Jekyll build process. HTML files are the only file type that is rendered on a website.
 - cd ~
