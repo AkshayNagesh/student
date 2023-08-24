@@ -29,7 +29,35 @@ Blogging in GitHub pages is a way to learn and code at the same time.
 ### Cristiano Ronaldo - Juventus vs Real Madrid - bicycle kick goal
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZC_XihZGPEg?si=nVni6KiWRbfAZlto" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+<div id="game-container">
+  <h2>Guess the Number Game</h2>
+  <p>Try to guess the secret number between 1 and 100!</p>
+  <input type="number" id="user-input" placeholder="Enter your guess">
+  <button id="submit-button">Submit Guess</button>
+  <p id="message"></p>
+</div>
 
+<script>
+  const secretNumber = Math.floor(Math.random() * 100) + 1;
+  const userInput = document.getElementById('user-input');
+  const submitButton = document.getElementById('submit-button');
+  const message = document.getElementById('message');
+
+  submitButton.addEventListener('click', () => {
+    const userGuess = parseInt(userInput.value);
+    
+    if (isNaN(userGuess)) {
+      message.textContent = "Please enter a valid number.";
+    } else if (userGuess < secretNumber) {
+      message.textContent = "Try a higher number!";
+    } else if (userGuess > secretNumber) {
+      message.textContent = "Try a lower number!";
+    } else {
+      message.textContent = `Congratulations! You guessed the number ${secretNumber}!`;
+      submitButton.disabled = true;
+    }
+  });
+</script>
 
 - Plans, Lists, [Scrum Boards](https://clickup.com/blog/scrum-board/) help you to track key events, show progress and record time.  Effort is a big part of your class grade.  Show plans and time spent!
 - [Hacks(Todo)](https://levelup.gitconnected.com/six-ultimate-daily-hacks-for-every-programmer-60f5f10feae) enable you to stay in focus with key requirements of the class.  Each Hack will produce Tangibles.
