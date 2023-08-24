@@ -20,7 +20,11 @@ Blogging in GitHub pages is a way to learn and code at the same time.
 ## About Me Freeform Picture
 ![Freeform](IMG_2439-2.jpg)
 
-## Overview of Hacks, Study, and Tangibles 
+### Favorite Ronaldo Video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2uG-YOiewwo?si=5Hhwfpl4Df6s7_x0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+### Man City vs. Inter: Extended Highlights | UCL Final | CBS Sports Golazo
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CDL_487D5Ms?si=QDPUgY-fpdOykm-9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 - Plans, Lists, [Scrum Boards](https://clickup.com/blog/scrum-board/) help you to track key events, show progress and record time.  Effort is a big part of your class grade.  Show plans and time spent!
