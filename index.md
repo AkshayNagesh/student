@@ -14,7 +14,6 @@ Blogging in GitHub pages is a way to learn and code at the same time.
 ### My Interests 
 ![ChristianoRonaldo](https://c4.wallpaperflare.com/wallpaper/139/444/1000/cristiano-ronaldo-wallpaper-preview.jpg)
 ![ManchesterCity](https://e1.pxfuel.com/desktop-wallpaper/619/64/desktop-wallpaper-manchester-city-man-city-aesthetic-thumbnail.jpg)
-![]
 ![GOAT](https://e0.pxfuel.com/wallpapers/736/844/desktop-wallpaper-best-soccer-players-cool-football-player.jpg)
 ![Nike](https://www.pixelstalk.net/wp-content/uploads/images6/Cool-Nike-Wallpaper-Blue-Color.jpg)
 ## About Me Freeform Picture
