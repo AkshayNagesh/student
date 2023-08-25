@@ -66,5 +66,5 @@ Blogging in GitHub pages is a way to learn and code at the same time.
 **Contanct Info**
 - Email: akshayn1219@gmail.com
 - School Email: akshayn42301@stu.powayusd.com
-- Phone: (858)-588-7838
+
 
