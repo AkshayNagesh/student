@@ -5,7 +5,7 @@ layout: post
 title: Number Guessing Game
 description: This my number guessing game.
 type: tangibles
-courses: {csp: {week: 0}}
+courses: {csp: {week: 1}}
 categories: [C1.4]
 ---
 
