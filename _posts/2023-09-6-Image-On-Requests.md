@@ -24,7 +24,7 @@
             const imageResults = document.getElementById("imageResults");
 
             if (searchQuery) {
-                // Replace 'YOUR_ACCESS_KEY' with your actual Unsplash API access key
+                jPfgEAqcNH-rY3xiVPMyoCjUyI84C92UFVfpXoopoGA
                 const accessKey = 'YOUR_ACCESS_KEY';
                 const apiUrl = `https://api.unsplash.com/search/photos?query=${searchQuery}&client_id=${accessKey}`;
 
@@ -49,4 +49,4 @@
         }
     </script>
 </body>
-</html> 
+</html>   
