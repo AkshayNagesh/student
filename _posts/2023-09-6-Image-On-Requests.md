@@ -2,7 +2,7 @@
 toc: false
 comments: false
 layout: post
-title: Song Recommendation
+title: Image on Request
 description: Image Search Application
 courses: {csp: {week: 3}}
 type: tangibles
