@@ -24,8 +24,8 @@
             const imageResults = document.getElementById("imageResults");
 
             if (searchQuery) {
-                jPfgEAqcNH-rY3xiVPMyoCjUyI84C92UFVfpXoopoGA
-                const accessKey = 'YOUR_ACCESS_KEY';
+                const accessKey =                 jPfgEAqcNH-rY3xiVPMyoCjUyI84C92UFVfpXoopoGA
+;
                 const apiUrl = `https://api.unsplash.com/search/photos?query=${searchQuery}&client_id=${accessKey}`;
 
                 // Clear previous search results
