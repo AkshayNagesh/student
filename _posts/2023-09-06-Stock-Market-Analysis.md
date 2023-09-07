@@ -8,62 +8,60 @@ courses: {csp: {week: 3}}
 type: tangibles
 ---
 
-
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Music Recommendation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Analysis Tool</title>
 </head>
 <body>
-    <h1>Music Recommendation</h1>
-    <!-- User input field -->
-    <label for="userInput">Enter your favorite genre or artist:</label>
-    <input type="text" id="userInput">
-    <button onclick="getRecommendations()">Get Recommendations</button>
-    <div id="recommendations">
-        <!-- Recommendations will be displayed here -->
-    </div>
-    <script>
-        const apiKey = 'a5d1284fa777bdb75371d65b7cee89ad';
-        function getRecommendations() {
-            const userInput = document.getElementById('userInput').value;
-            const url = `https://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=${userInput}&api_key=${apiKey}&format=json`;
-            fetch(url)
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error(`HTTP error! Status: ${response.status}`);
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    if (data && data.toptracks && Array.isArray(data.toptracks.track)) {
-                        const recommendations = data.toptracks.track;
-                        displayRecommendations(recommendations);
-                    } else {
-                        console.error('Invalid API response:', data);
-                        alert('Invalid API response. Please try again later.');
-                    }
-                })
-                .catch(error => {
-                    console.error('Error fetching data:', error);
-                    alert('Error fetching data. Please try again later.');
-                });
-        }
-        function displayRecommendations(recommendations) {
-            const recommendationsContainer = document.getElementById('recommendations');
-            recommendationsContainer.innerHTML = ''; // Clear previous recommendations
-            if (recommendations.length === 0) {
-                recommendationsContainer.textContent = 'No recommendations found.';
-            } else {
-                recommendations.forEach(track => {
-                    const trackName = track.name;
-                    const artistName = track.artist.name;
-                    const trackElement = document.createElement('p');
-                    trackElement.textContent = `${trackName} by ${artistName}`;
-                    recommendationsContainer.appendChild(trackElement);
-                });
-            }
-        }
-    </script>
+    <h1>Stock Market Analysis Tool</h1>
+    <!-- Input field for stock symbol -->
+    <label for="stockSymbol">Enter Stock Symbol:</label>
+    <input type="text" id="stockSymbol" placeholder="Enter Stock Symbol">
+    <button onclick="fetchStockData()">Fetch Data</button>
+    <!-- Display stock data -->
+    <div id="stockData">
+        <!-- Stock data will be displayed here -->
+    </div>
+    <script>
+        function fetchStockData() {
+            const stockSymbol = document.getElementById("stockSymbol").value;
+            const stockDataElement = document.getElementById("stockData");
+            if (stockSymbol) {
+                // Replace 'YOUR_API_KEY' with your Alpha Vantage API key
+                const apiKey = 'ET3GOEQED7722VE';
+                const apiUrl = `https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=${stockSymbol}&interval=5min&apikey=${apiKey}`;
+                // Clear previous data
+                stockDataElement.innerHTML = '';
+                fetch(apiUrl)
+                    .then(response => response.json())
+                    .then(data => {
+                        const metaData = data['Meta Data'];
+                        const timeSeries = data['Time Series (5min)'];
+                        // Display stock information
+                        const stockInfoElement = document.createElement("div");
+                        stockInfoElement.innerHTML = `
+                            <h2>${metaData['2. Symbol']}</h2>
+                            <p>Updated at: ${metaData['3. Last Refreshed']}</p>
+                        `;
+                        stockDataElement.appendChild(stockInfoElement);
+                        // Display recent stock prices
+                        const pricesElement = document.createElement("div");
+                        pricesElement.innerHTML = '<h3>Recent Prices:</h3>';
+                        for (const time in timeSeries) {
+                            const priceData = timeSeries[time];
+                            pricesElement.innerHTML += `
+                                <p>${time}: ${priceData['1. open']}</p>
+                            `;
+                        }
+                        stockDataElement.appendChild(pricesElement);
+                    })
+                    .catch(error => {
+                        console.error("Error fetching stock data:", error);
+                    });
+            }
+        }
+    </script>
 </body>
 </html>
