@@ -3,11 +3,11 @@ toc: false
 comments: false
 layout: post
 title: Image on Request
-description: Image Search Application
+description: Input the image you want to see and my code will give the image. 
 courses: {csp: {week: 3}}
 type: tangibles
 ---
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -33,8 +33,8 @@ type: tangibles
             const imageResults = document.getElementById("imageResults");
 
             if (searchQuery) {
-                const accessKey =                 jPfgEAqcNH-rY3xiVPMyoCjUyI84C92UFVfpXoopoGA
-;
+                // Replace 'YOUR_ACCESS_KEY' with your actual Unsplash API access key
+                const accessKey = 'jPfgEAqcNH-rY3xiVPMyoCjUyI84C92UFVfpXoopoGA';
                 const apiUrl = `https://api.unsplash.com/search/photos?query=${searchQuery}&client_id=${accessKey}`;
 
                 // Clear previous search results
@@ -58,4 +58,4 @@ type: tangibles
         }
     </script>
 </body>
-</html>   
+</html>

@@ -19,7 +19,7 @@ type: tangibles
     <input type="text" id="topicInput" placeholder="Enter a topic">
     <button id="fetchButton">Fetch Summary</button>
     <div id="summaryContainer"></div>
-
+cod
 <script>
         document.addEventListener("DOMContentLoaded", () => {
             const fetchButton = document.getElementById("fetchButton");
