@@ -2,8 +2,8 @@
 toc: false
 comments: false
 layout: post
-title: Song Recommendation
-description:  This is my song recommendation application
+title: Stocks
+description:  This is my Stocks App
 courses: {csp: {week: 3}}
 type: tangibles
 ---
