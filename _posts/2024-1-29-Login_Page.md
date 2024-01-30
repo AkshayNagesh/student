@@ -7,7 +7,6 @@ courses: { csp: {week: 19} }
 type: tangibles
 ---
 
-
 <html>
 <head>
     <title>Login</title>
@@ -19,12 +18,10 @@ type: tangibles
         <input type="password" name="password" placeholder="Password" required>
         <button type="submit">Login</button>
     </form>
-  
-
-
-
+    <a href="/signup">Sign up</a>
 </body>
 </html>
+
 
 <html>
 <head>
@@ -37,9 +34,10 @@ type: tangibles
         <input type="password" name="password" placeholder="Password" required>
         <button type="submit">Sign Up</button>
     </form>
-    
+    <a href="/login">Login</a>
 </body>
 </html>
+
 
 <html>
 <head>
