@@ -6,7 +6,8 @@ title: Login Page
 courses: { csp: {week: 19} }
 type: tangibles
 ---
-<!DOCTYPE html>
+
+
 <html>
 <head>
     <title>Login</title>
@@ -22,7 +23,6 @@ type: tangibles
 </body>
 </html>
 
-<!DOCTYPE html>
 <html>
 <head>
     <title>Signup</title>
@@ -38,7 +38,6 @@ type: tangibles
 </body>
 </html>
 
-<!DOCTYPE html>
 <html>
 <head>
     <title>Home</title>
