@@ -18,7 +18,7 @@ type: tangibles
         <input type="password" name="password" placeholder="Password" required>
         <button type="submit">Login</button>
     </form>
-    <a href="/signup">Sign up</a>
+  
 </body>
 </html>
 
@@ -34,7 +34,7 @@ type: tangibles
         <input type="password" name="password" placeholder="Password" required>
         <button type="submit">Sign Up</button>
     </form>
-    <a href="/login">Login</a>
+    
 </body>
 </html>
 
