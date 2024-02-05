@@ -57,4 +57,40 @@ The script defines a function when the page loads. This function is triggered wh
         };
     fetch(url, authOptions)
 
-    
+    function login_user(){
+        // Set Authenticate endpoint
+        const url = uri + '/api/users/';
+
+        // Set the body of the request to include login data from the DOM
+        const body = {
+            // name: document.getElementById("name").value,
+            uid: document.getElementById("uid").value,
+            // dob: document.getElementById("dob").value
+        };
+
+        // Change options according to Authentication requirements
+        const authOptions = {
+            ...options, // This will copy all properties from options
+            cache: 'no-cache',
+            method: 'DELETE',
+            body: JSON.stringify(body)
+        };
+
+        // Fetch JWT
+        fetch(url, authOptions)
+        .then(response => {
+            // handle error response from Web API
+            if (!response.ok) {
+                const errorMsg = 'Login error: ' + response.status;
+                console.log(errorMsg);
+                return;
+            }
+            // Success!!!
+            // Redirect to the database page
+            window.location.href = "{{site.baseurl}}/lmc-login";
+        })
+        // catch fetch errors (ie ACCESS to server blocked)
+        .catch(err => {
+            console.error(err);
+        });
+    }
