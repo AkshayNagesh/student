@@ -1,11 +1,17 @@
 ---
 comments: True
 layout: post
-title: Edit User
-courses: { csp: {week: 20} }
+title: Delete
+courses: {'csp': {'week': 20}}
 type: hacks
-permalink: /lmc-editUser
+permalink: /deleteUser
 ---
+<!-- 
+A simple HTML login form with a Login action when button is pressed.  
+
+The form triggers the login_user function defined in the JavaScript below when the Login button is pressed.
+-->
+
 <style>
         body {
             font-family: Arial, sans-serif;
@@ -64,17 +70,14 @@ permalink: /lmc-editUser
     </style>
 <body>
     <div class="container">
-        <h2>Edit User Information</h2>
-        <form id="username" action="javascript:edit_user()">
-            <p><label for="name">User Name:</label></p>
-            <p><input class="userInput" type="text" name="name" id="name" required></p>
-            <p><label for="dob">Date of Birth:</label></p>
-            <p><input class="userInput" type="text" id="dob" required></p>
-            <p><button onclick="edit_user()">Submit</button></p>
+        <h2>Delete User Form</h2>
+        <form id="username" action="javascript:login_user()">
+            <p><label for="uid">User ID:</label></p>
+            <p><input class="userInput" type="text" name="uid" id="uid" required></p>
+            <p><button onclick="login_user()">Delete</button></p>
         </form>
     </div>
 </body>
-
 
 
 <!-- 
@@ -85,32 +88,41 @@ The script defines a function when the page loads. This function is triggered wh
 <script type="module">
     // uri variable and options object are obtained from config.js
     import { uri, options } from '{{site.baseurl}}/assets/js/api/config.js';
-    
-    function edit_user(){
+    localStorage.setItem('userID',document.getElementById("uid").value);
+    const url = uri + '/api/users/authenticate';
+    const body = {
+            // name: document.getElementById("name").value,
+            uid: "toby",
+            password: "123toby"
+            // dob: document.getElementById("dob").value
+        };
+    const authOptions = {
+            ...options,// This will copy all properties from options
+            method: 'POST', // Override the method property
+            cache: 'no-cache', // Set the cache property
+            body: JSON.stringify(body)
+        };
+    fetch(url, authOptions)
+
+    function login_user(){
         // Set Authenticate endpoint
         const url = uri + '/api/users/';
 
         // Set the body of the request to include login data from the DOM
         const body = {
-            name: document.getElementById("name").value,
-            dob: document.getElementById("dob").value,
+            // name: document.getElementById("name").value,
+            uid: document.getElementById("uid").value,
+            // dob: document.getElementById("dob").value
         };
 
         // Change options according to Authentication requirements
         const authOptions = {
             ...options, // This will copy all properties from options
-            method: 'PUT', // Override the method property
-            cache: 'no-cache', // Set the cache property
-            headers: {
-                'Content-Type': 'application/json', // Example header
-                'uid': localStorage.getItem('uid') // Set the uid as a header
-            },
-            body: JSON.stringify(body),
+            cache: 'no-cache',
+            method: 'DELETE',
+            body: JSON.stringify(body)
         };
 
-        console.log(url);
-        console.log(authOptions);
-        console.log(body);
         // Fetch JWT
         fetch(url, authOptions)
         .then(response => {
@@ -120,7 +132,9 @@ The script defines a function when the page loads. This function is triggered wh
                 console.log(errorMsg);
                 return;
             }
-            window.location.href = "{{site.baseurl}}/data/database";
+            // Success!!!
+            // Redirect to the database page
+            window.location.href = "{{site.baseurl}}/lmc-login";
         })
         // catch fetch errors (ie ACCESS to server blocked)
         .catch(err => {
@@ -129,5 +143,5 @@ The script defines a function when the page loads. This function is triggered wh
     }
 
     // Attach login_user to the window object, allowing access to form action
-    window.edit_user = edit_user;
+    window.login_user = login_user;
 </script>
