@@ -54,4 +54,4 @@ JWT vs PYJWT and the Virtual Enviroment
 "message": "module 'jwt' has no attribute 'encode'"
 }
 JWT did not have the attribute 'encode' for whatever reason. I downloaded PyJWT and then it started conflicting with the JWT. I made a virtual environment that did not have the JWT and it stopped conflicting. This solved the problem.
-:D
+
