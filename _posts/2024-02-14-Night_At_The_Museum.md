@@ -3,7 +3,7 @@ toc: true
 comments: false
 layout: post
 title: Night At the Museum
-courses: { csp: {week: 22} }
+courses: { csp: {week: 21} }
 type: tangibles
 ----
 ***N@TM***
@@ -14,7 +14,7 @@ type: tangibles
 
 - We had some trouble deciding which project was best but in the end we decided to make games and store info about users and be a very well rounded project with fun activties, tips to physical health and studying help.
 
-- I wasnt able to attend N@TM but was able to look at friends projects in my period and other peroid.
+- I was not able to attend N@TM but was able to look at friends projects in my period and other peroid.
 
 **Glow**
 
