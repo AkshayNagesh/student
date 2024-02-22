@@ -11,7 +11,7 @@ type: hacks
 
 **Reflection**
 
-- My team did not quailify for N@TM because of serveral reasons but in the end if we were on top of everything the second we learned about it I think we could of qualified
+- My team didn't quailify for N@TM because of serveral reasons but in the end if we were on top of everything the second we learned about it I think we could of qualified
 
 - We had some trouble deciding which project was best but in the end we decided to make games and store info about users and be a very well rounded project with fun activties, tips to physical health and studying help.
 
