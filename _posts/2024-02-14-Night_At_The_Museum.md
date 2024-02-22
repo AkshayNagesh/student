@@ -1,11 +1,12 @@
 ---
-toc: true
+toc: false
 comments: false
 layout: post
-title: Night At the Museum
-courses: { csp: {week: 21} }
-type: tangibles
-----
+title: Night At The Museum
+description: Coding night
+courses: {csp: {week: 22}}
+type: hacks
+---
 ***N@TM***
 
 **Reflection**
