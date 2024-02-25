@@ -13,4 +13,4 @@ Frontend
 Backend 
 - Helped with 403 error/CORS errors.
 - Created the whole backend for quizzes, and helped a bit for games
-- My backend for my feature working on user, users and player to save the game score and  quiz results to each user, on the database.
+- My backend for my feature working on user, users and player to save the game score and  quiz results to each user, on the database
