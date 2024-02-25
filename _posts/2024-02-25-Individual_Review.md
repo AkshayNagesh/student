@@ -1,3 +1,12 @@
+---
+toc: true
+comments: true
+layout: post
+title: Individual Review
+courses: { csp: {week: 23} }
+type: tangibles
+---
+
 Project Overview:
 
 Our project centers on a shared passion within our group: video games. This unanimous interest, which we all regularly indulge in, serves as the cornerstone of our initiative. Recognizing the importance of moderation, our project aims to balance gaming with educational pursuits and physical activity. By integrating gaming with access to educational resources and fitness activities, we seek to inspire our users to diversify their interests. The project includes functionalities that offer guidance on maintaining physical well-being, support in academic studies, and assessments of educational levels, all while providing a space for users to unwind with games.
