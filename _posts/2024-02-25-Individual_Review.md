@@ -1,6 +1,6 @@
 ---
 toc: true
-comments: true
+comments: false
 layout: post
 title: Individual Review
 courses: { csp: {week: 23} }
