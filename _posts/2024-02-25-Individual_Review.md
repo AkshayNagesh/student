@@ -57,6 +57,8 @@ My main feature is the education hub, in which you take a small quiz that determ
 
 ### Component B: Video
 
+My Video
+<video height = 400 src="../Videos/IndividualReview.mp4" controls title="Title"></video>
 
 
 | Collegeboard Requirements | My Video |
